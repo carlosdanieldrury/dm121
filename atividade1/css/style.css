@@ -44,7 +44,8 @@ body{
 }
 
 ul,h1,h2,h3,h4,h5,h6,p,section{
-    margin:0;
+    margin:20;
+    padding-left: 40;
     padding:0;
 }
 
@@ -60,42 +61,35 @@ header{
     min-height:70px;
     border-bottom:#1de827 3px solid;
 }
-header h1{
+
+header h1, header h2{
     float: left;
     margin: 0;
-    padding: 0 20px 0 20px
+    padding: 0 40px 0 20px
 }
+
 header nav{
     float: right;
     margin-top: 10px;
 }
+
 header li{
     display: inline;
     padding: 0 20px 0 20px;
 }
+
 header a{
     color:#ffffff;
     text-transform: uppercase;
     font-size:16px;
 }
+
 header a:hover{
     color:#cccccc;
 }
 
-/*Section showcase*/
-#showcase{
-    min-height: 400px;
-    background: url('../img/showcase.jpg') no-repeat -315px -792px;
-    color: #ffffff;
-    text-align: center
-}
-#showcase h1, #showcase p{
-    position: relative;
-    top: 100px
-}
-#showcase h1{
-   font-size:55px;
-}
+
+
 
 /*Section newsletter*/
 #newsletter{
@@ -103,14 +97,17 @@ header a:hover{
     color: #ffffff;
     min-height:70px;
 }
+
 #newsletter input[type="email"]{
     padding:4px;
     height:38px;
     width:250px;
 }
+
 #newsletter h2,#newsletter form{
     padding-top: 15px
 }
+
 .button{
     height: 38px;
     background: #1de827;
@@ -185,3 +182,13 @@ footer{
             width: 100%;
     margin: 0px }
     }
+
+
+/* Media Queries*/
+@media all and (max-width: 400px) {
+    section, col, box, row{
+        width: 100%;
+    }
+
+}
+    
