@@ -88,26 +88,6 @@ header a:hover{
     color:#cccccc;
 }
 
-
-
-
-/*Section newsletter*/
-#newsletter{
-    background: #000;
-    color: #ffffff;
-    min-height:70px;
-}
-
-#newsletter input[type="email"]{
-    padding:4px;
-    height:38px;
-    width:250px;
-}
-
-#newsletter h2,#newsletter form{
-    padding-top: 15px
-}
-
 .button{
     height: 38px;
     background: #1de827;
@@ -118,22 +98,23 @@ header a:hover{
 }
 
 /*Section box-languages*/
-#box-languages .box{
-    text-align: center;
+#info .box{
+    text-align: left;
     padding:10px;
 }
 
-#box-languages .box img{
+#info .box img{
     max-width: 100%;
 }
 
 /*Section footer*/
-footer{
-    padding:20px;
-    margin-top:20px;
+#footer{
+    height: 50px;
+    padding:10px;
     color:#ffffff;
-    background-color:#1de827;
+    background-color:#acacac;
     text-align: center;
+
   }
 
 /*Highlight*/
@@ -142,53 +123,38 @@ footer{
     font-weight:bold;
 }
 
-@media all and (max-width:767px){/* Telefone em landscape a tablet
-    em portrait */
-        .container{
-            width: 100%;
-    margin: 0px;
-            padding: 0px
-        }
-        header h1,
-        header nav{
-            float: none;
-        }
-        header h1{
-            text-align: center
+/*Media queries*/
+@media all and (max-width:400px){
+    section{
+        width: 100%
+    }
+    .col.span6 {
+        width: 100%
+    }
+}
+
+
+@media all and (max-width:767px){
+    .container{
+        width: 100%;
+        margin: 0px;
+        padding: 0px
+    }
+    header h1,
+    header nav{
+        float: none;
+    }
+    header h1{
+        text-align: center
     }
     header nav li{
        display: block;
        text-align: center;
        padding: 10px
-    } #showcase{
-        background: #f4f4f4;
-        color:#000000
     }
-    #newsletter h2,
-    #newsletter form{
+    #info .box{
         float: none;
         width: 100%;
         margin: 0px
     }
-        #newsletter h2{
-            text-align: center
-        }
-        #newsletter input[type="email"],
-        #newsletter button{
-            display: block;
-    width: 100% }
-        #box-languages .box{
-            float: none;
-            width: 100%;
-    margin: 0px }
-    }
-
-
-/* Media Queries*/
-@media all and (max-width: 400px) {
-    section, col, box, row{
-        width: 100%;
-    }
-
 }
-    
