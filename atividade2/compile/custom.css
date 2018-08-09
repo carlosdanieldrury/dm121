@@ -1,0 +1,15 @@
+#header {
+  background-color: #6c278e;
+  color: #ffffff;
+}
+
+#home header {
+  align-content: center;
+}
+
+#portfolio figure {
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=custom.css.map */
