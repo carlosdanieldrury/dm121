@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.container {
+    padding-right: 2.08333333%;
+}
+.row {
+    clear: both;
+}
+.col {
+    float: left;
+    margin-left: 2.08333333%;
+    width: 6.25%;
+}
+/* Duas colunas de largura de 120px e uma adicional com largura de
+20px */
+.col.span2 { width: 14.58333333%; } /* (140/960) * 100 */
+/* Tres colunas de largura de 180px e duas adicionais com largura de
+40px */
+.col.span3 { width: 22.91666666%; } /* (220/960) * 100 */
+/* Assim por diante */
+.col.span4 { width: 31.24999999%; } /* (300/960) * 100 */
+.col.span5 { width: 39.58333332%; } /* (380/960) * 100 */
+.col.span6 { width: 47.91666665%; } /* (460/960) * 100 */
+.col.span7 { width: 56.24999998%; } /* (540/960) * 100 */
+.col.span8 { width: 64.58333331%; } /* (620/960) * 100 */
+.col.span9 { width: 72.91666664%; } /* (700/960) * 100 */
+.col.span10 { width: 81.24999997%; } /* (780/960) * 100 */
+.col.span11 { width: 89.5833333%; } /* (860/960) * 100 */
+.col.span12 { width: 97.91666663%; } /* (940/960) * 100 */
+
+/*Estilos gerais*/
+body{
+  font-family: Arial, Helvetica,sans-serif;
+  padding:0;
+  background-color:#f4f4f4;
+}
+
+ul,h1,h2,h3,h4,h5,h6,p,section{
+    margin:20;
+    padding-left: 40;
+    padding:0;
+}
+
+a{
+    text-decoration: none
+}
+
+/*Header*/
+header{
+    background:#000;
+    color:#ffffff;
+    padding-top:20px;
+    min-height:70px;
+    border-bottom:#1de827 3px solid;
+}
+
+header h1, header h2{
+    float: left;
+    margin: 0;
+    padding: 0 40px 0 20px
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a{
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+header a:hover{
+    color:#cccccc;
+}
+
+.button{
+    height: 38px;
+    background: #1de827;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+/*Section box-languages*/
+#info .box{
+    text-align: left;
+    padding:10px;
+}
+
+#info .box img{
+    max-width: 100%;
+}
+
+/*Section footer*/
+#footer{
+    height: 50px;
+    padding:10px;
+    color:#ffffff;
+    background-color:#acacac;
+    text-align: center;
+
+  }
+
+/*Highlight*/
+.highlight{
+    color:#1de827;
+    font-weight:bold;
+}
+
+/*Media queries*/
+@media all and (max-width:400px){
+    section{
+        width: 100%
+    }
+    .col.span6 {
+        width: 100%
+    }
+}
+
+
+@media all and (max-width:767px){
+    .container{
+        width: 100%;
+        margin: 0px;
+        padding: 0px
+    }
+    header h1,
+    header nav{
+        float: none;
+    }
+    header h1{
+        text-align: center
+    }
+    header nav li{
+       display: block;
+       text-align: center;
+       padding: 10px
+    }
+    #info .box{
+        float: none;
+        width: 100%;
+        margin: 0px
+    }
+}
