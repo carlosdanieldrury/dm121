@@ -2,6 +2,33 @@
 #header {
   background-color: #6c278e;
   color: #ffffff;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  background-color: #6c278e;
+}
+
+#main-nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header a:hover {
+  color: #ffffff;
 }
 
 /*!

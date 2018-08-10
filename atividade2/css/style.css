@@ -7,3 +7,14 @@ ul,h1,h2,h3,h4,h5,h6,p,section{
     margin: 10px;
     padding: 10px;
 }
+
+#portfolio .box img {
+    width: 330px;
+    padding: 10px;
+}
+
+.title-section {
+    text-align: center;
+    font-weight: bold;
+}
+
